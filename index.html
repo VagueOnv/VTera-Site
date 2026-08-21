@@ -54,7 +54,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 
 .morph-section{padding:115px 0 0;border-top:1px solid var(--line)}
 .morph-intro{max-width:760px;padding-bottom:60px}
-.morph-scroll{height:620vh;position:relative}
+.morph-scroll{height:410vh;position:relative}
 .morph-sticky{position:sticky;top:0;height:100svh;display:flex;align-items:center;padding:90px 0 55px}
 .morph-shell{position:relative;width:100%;height:min(690px,76svh);border-radius:34px;overflow:hidden;background:#050505;box-shadow:0 35px 100px #0002}
 .morph-card{position:absolute;inset:0;opacity:0;transform:scale(.94);clip-path:inset(0 0 0 12% round 34px);transition:none;will-change:opacity,transform,clip-path}
@@ -69,7 +69,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 .morph-progress span{display:block;height:100%;width:0;background:#fff;transform-origin:left}
 @media(max-width:700px){
  .morph-section{padding-top:85px}
- .morph-scroll{height:590vh}
+ .morph-scroll{height:390vh}
  .morph-sticky{padding-top:92px;padding-bottom:34px;height:100svh;align-items:center}
  .morph-shell{width:100%;height:min(72svh,680px);min-height:500px;border-radius:25px}
  .morph-card{clip-path:inset(0 0 0 10% round 25px)}
@@ -223,7 +223,7 @@ function updateMorph(){
  const segment=1/cards.length;
  const stage=Math.min(cards.length-1,Math.floor(p/segment));
  const within=(p-stage*segment)/segment;
- const dwell=.68;
+ const dwell=.36;
  const transition=stage===cards.length-1?0:Math.max(0,Math.min(1,(within-dwell)/(1-dwell)));
  const eased=transition*transition*(3-2*transition);
  cards.forEach((card,i)=>{
