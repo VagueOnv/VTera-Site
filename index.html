@@ -37,8 +37,6 @@ section{padding:125px 0;border-top:1px solid var(--line)}.head{max-width:740px;m
 
 .metrics{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:25px;overflow:hidden}.metric{background:var(--surface);padding:35px 28px;min-height:160px}.metric:first-child{grid-row:span 2}.metric label{font:9px var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}.metric strong{display:block;font:500 27px/1.2 var(--display);margin-top:15px}.metric:first-child strong{font-size:44px}@media(max-width:720px){.metrics{grid-template-columns:1fr 1fr}.metric:first-child{grid-row:auto;grid-column:span 2}}@media(max-width:460px){.metrics{grid-template-columns:1fr}.metric:first-child{grid-column:auto}}
 
-.founder{display:grid;grid-template-columns:250px 1fr;gap:80px}.mark{width:112px;height:112px;border-radius:25px;border:1px solid var(--line-strong);background:var(--surface);display:grid;place-items:center;font:500 32px var(--display)}.foundername{font:16px var(--display);margin-top:17px}.role{font:9px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}.foundertext{max-width:730px;color:var(--muted);font-size:16px}.foundertext p+p{margin-top:20px}.foundertext strong{color:var(--text);font-weight:500}@media(max-width:760px){.founder{grid-template-columns:1fr;gap:35px}}
-
 .ctasection{padding:130px 0 150px}.ctabox{position:relative;overflow:hidden;border-radius:32px;background:var(--text);color:var(--bg);padding:65px}.ctabox:after{content:'';position:absolute;width:600px;height:600px;border:1px solid #ffffff15;border-radius:50%;right:-240px;top:-280px;box-shadow:0 0 0 80px #ffffff04,0 0 0 160px #ffffff02}.ctacontent{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:end;gap:40px}.ctabox h2{max-width:700px}.email{font:26px var(--display);white-space:nowrap;border-bottom:1px solid #ffffff55;padding-bottom:4px}@media(max-width:760px){.ctabox{padding:38px}.ctacontent{display:block}.email{display:inline-block;margin-top:30px;font-size:21px}}
 
 footer{border-top:1px solid var(--line);padding:30px 0 42px}
@@ -109,7 +107,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 
 <nav><div class="nav">
 <a class="brand" href="#"><img class="brand-mark" src="v.ico" alt="VTera">VTera</a>
-<div class="navlinks"><a href="#problem">Problem</a><a href="#architecture">Architecture</a><a href="#outcomes">Outcomes</a><a href="#founder">Founder</a></div>
+<div class="navlinks"><a href="#problem">Problem</a><a href="#architecture">Architecture</a><a href="#outcomes">Outcomes</a><a href="#foundation">Foundation</a></div>
 <div class="navright"><button class="theme" id="theme" aria-label="Toggle dark mode">☼</button><a class="cta" href="mailto:hello@vtera.co">Get in touch</a></div>
 </div></nav>
 
@@ -181,9 +179,58 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 
 <section class="ctasection" id="contact"><div class="wrap"><div class="ctabox reveal"><div class="ctacontent"><h2>Turn fragmented operational data into decisions your business can act on.</h2><a class="email" href="mailto:hello@vtera.co">hello@vtera.co →</a></div></div></div></section>
 
-<section id="founder"><div class="wrap"><div class="head reveal"><div class="eyebrow">Founder</div><h2>Built from inside the region.</h2></div>
-<div class="founder reveal"><div><div class="mark">V.</div><div class="foundername">Founder</div><div class="role">Data Science & AI · PSUT</div></div><div class="foundertext"><p>VTera is currently solo-founded by a 21-year-old Data Science and AI student at Princess Sumaya University for Technology in Amman. The technical foundation is being applied directly to the product architecture.</p><p>The edge is not only technical. It is an understanding of the region from the inside, including operational realities, institutional culture, and the trust dynamics that influence enterprise technology adoption.</p><p>VTera is focused on securing early logistics pilot partners and building the technical team required to turn validated workflows into production software, while keeping the company founder-led.</p></div></div></div></section>
+<section id="foundation">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Foundation</div>
+      <h2>Built around the decision layer.</h2>
+      <p class="lede">
+        VTera is being built on a simple thesis: as enterprise data becomes more connected
+        and AI becomes more capable, the next bottleneck will be deciding what should
+        actually happen.
+      </p>
+    </div>
 
+    <div class="panel reveal">
+      <div class="problem">
+        The foundation is not another system of record. It is the layer that turns context into action.
+      </div>
+
+      <div class="bodytext">
+        <p>
+          VTera is being developed as an industry-agnostic decision intelligence layer
+          for complex operational environments, with logistics serving as the first
+          proving ground.
+        </p>
+
+        <p>
+          The technical foundation is centered on
+          <strong>operational context, temporal reasoning, economic evaluation,
+          governed decision-making, and outcome learning.</strong>
+        </p>
+
+        <p>
+          The goal is to connect fragmented enterprise information to the decisions that
+          follow: what matters, what can be done, what each option costs, what constraints
+          apply, who must approve, and what happened after the decision was made.
+        </p>
+
+        <p>
+          VTera is being built to operate above existing enterprise systems rather than
+          replace them, using those systems as sources of context while owning the logic
+          that turns information into defensible decisions.
+        </p>
+
+        <p>
+          The current focus is proving that decision layer in real operational environments
+          and building toward a system that can learn which interventions work, under which
+          conditions, and with what economic outcome.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <footer>
   <div class="wrap">
     <div class="footer-left">
